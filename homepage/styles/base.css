@@ -1,0 +1,159 @@
+body {
+    background-color: #ccd5ae;
+}
+
+header{
+    text-align: center;
+    align-content: center;
+    background: #fefae0;
+    color: #d4a373;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.top-menu {
+    font-size: 1.2rem;
+    display: flex;
+    background: #e9edc9;
+    border-radius: 10px;
+}
+
+.top-menu a {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    flex: auto;
+    color: #d4a373;
+}
+
+.top-menu a:hover {
+    background: #d4a373;
+    color: #ccd5ae;
+    border-radius: 10px;
+}
+
+p {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid #d4a373;
+    border-radius: 3cqb;
+    overflow: hidden;
+}
+
+.card h3 {
+    grid-column: 1/5;
+    text-align: center;
+    height: 75px;
+    font-size: 25px;
+    background-color: #fefae0;
+    border-radius: 3px;
+    color: #d4a373;
+}
+
+.about-header {
+    grid-column: 1/5;
+    text-align: center;
+    height: 75px;
+    font-size: 25px;
+    background-color: #fefae0;
+    border-radius: 3px;
+    color: #d4a373;
+}
+
+.travel {
+    grid-column: 1/5;
+    grid-row: 1;
+    text-align: center;
+    height: 75px;
+    font-size: 25px;
+    background-color: #fefae0;
+    border-radius: 3px;
+    color: #d4a373;
+}
+main a {
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+.bio, #me-pic, .fav-countries, #paris-pic {
+    padding: 20px 0px;
+}
+
+#me-pic img{
+    min-width: 200px;
+    max-width: 100%;
+    border: 2px solid #e9edc9;
+}
+#paris-pic img{
+    min-width: 200px;
+    max-width: 40%;
+    border: 2px solid #e9edc9; 
+}
+
+.bio {
+    grid-column: 1/4;
+    margin-left: 20px;
+    text-align: center;
+    padding-top: 80px;
+    line-height: 30px;
+}
+
+#me-pic {
+    grid-column: 4/5;
+    margin: 0px 20px;
+}
+
+.fav-countries {
+    grid-column: 2/5;
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+#paris-pic {
+    grid-column: 1/2;
+    margin: 0px 20px;
+}
+.travel-links {
+    grid-column: 1/5;
+    padding: 20px;
+    text-align: center;
+    grid-row: center;
+}
+.travel-links a{
+    background-color: #e9edc9;
+    color: #d4a373;
+    width: 200px;
+    border-radius: .75rem;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fefae0;
+    color: #d4a373;
+}

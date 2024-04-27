@@ -1,45 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Emily McGovern</title>
-    <meta name="author" content="Emily McGovern">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals: 
-    Created by Emily McGovern. Demonstrating my prerequisite knowledge
-    by using HTML and CSS in a Home Page design and development about myself.
-    I will also be beginning to use the concept of JavaScript to provide 
-    excitement to my design.">
-</head>
-<body>
-    <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals - Emily McGovern</h1>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/uas/login">LinkedIn</a></li>
-                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/34?lang=eng&id=p33#p33">Scripture</a></li>
-                <li><a href=""></a>Final Project</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="card">
-            <h2>About Me</h2>
-            <div class="bio">
-                <p>
-                    My name is Emily McGovern. I am currently living in Vicenza Italy, but I am from 
-                    the united states. I am 
-                </p>
-            </div>
-        </section>
-        <section class="card">
 
-        </section>
-    </main>
-    <footer>
-        <p>&COPY;<span id="currentyear"></span> | Emily McGovern | Italy</p>
-        <p id="last-modified"></p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Emily McGovern</title>
+        <meta name="author" content="Emily McGovern">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals: 
+        Created by Emily McGovern. Demonstrating my prerequisite knowledge
+        by using HTML and CSS in a Home Page design and development about myself.
+        I will also be beginning to use the concept of JavaScript to provide 
+        excitement to my design.">
+        <link rel="stylesheet" href="styles/base.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>WDD 131 - Dynamic Web Fundamentals - Emily McGovern</h1>
+            <nav class="top-menu">
+                <a href="https://www.linkedin.com/uas/login">LinkedIn</a>
+                <a href="https://byui.instructure.com/">I-Learn</a>
+                <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/34?lang=eng&id=p33#p33">Scripture</a>
+                <a href="#">Final Project</a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="card">
+                <h2 class="about-header">About Me</h2>
+                <div class="bio">
+                    <p>
+                        My name is Emily McGovern. I am currently living in Vicenza Italy, but I am from
+                        the United States. I love playing the violin and piano, video games, videography,
+                        traveling, and hanging around with my family. Some of my top favorite countries I have
+                        visited are Greece, France, Slovenia, and Poland. Some of my goal countries to visited
+                        are Norway, Iceland, and Spain.
+                    </p>
+                </div>
+                <div id="me-pic">
+                    <img src="images/me-london.jpg" alt="picture of Emily">
+                </div>
+                <h3>3 Favorite Countries</h3>
+                <div id="paris-pic">
+                    <img src="images/paris.jpg" alt="picture of paris">
+                </div>
+                <div class="fav-countries">
+                    <h4>France</h4>
+                    <p>
+                        France is a beautiful country. Even though Paris is insipiring and breath taking, the country
+                        side
+                        of France is what is most special about this country. In the country side you are able to see
+                        beautiful
+                        castles and quaint little villages that have a special place in my heart. One city that is a
+                        must see
+                        is Colmar. It feels like you are stepping into the fairytale story of Beauty and the Beast.
+                    </p>
+                    <h4>Slovenia</h4>
+                    <p>
+                        Slovenia is a country full of greenery and magnificent scenery. Even though I have only visited
+                        Slovenia
+                        a couple of times, it has a special place in my heart. This country has wonderful hikes and
+                        breath taking via
+                        ferratas.
+                        My favorite place to visit is Lake Bled. The city of Bled does not only have a castle over
+                        looking a lake, but
+                        it has an island in the middle of the lake that contains a beautiful church and a delicious
+                        gelato shop.
+                    </p>
+                    <h4>England</h4>
+                    <p>
+                        England is always full of wonderful and enjoyment. If you don't fall in love with the accents,
+                        you sure will fall
+                        in love with what the country has to offer. To it's quaint country side to the big city of
+                        London, this country has
+                        it all. I especially love learning and seeing the history. The historical sights are fascinating
+                        to see and learn about
+                        throughout London.
+                    </p>
+                </div>
+            </section>
+            <section class="card">
+                ` <h2 class="travel">Travel Sites</h2>
+                <div class="travel-links">
+                    <a href="https://www.slovenia.info/en">Slovenia</a>
+                    <a href="https://www.visitbritain.com/en">England</a>
+                    <a
+                        href="https://www.ricksteves.com/watch-read-listen/read/articles/first-time-france-trip">France</a>
+                    <a href="https://www.ricksteves.com/europe/poland">Poland</a>
+                    <a href="https://www.ricksteves.com/europe/greece">Greece</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&COPY;<span id="currentyear"></span> | Emily McGovern | Italy</p>
+            <p id="last-modified"></p>
+        </footer>
+    </body>
+
 </html>

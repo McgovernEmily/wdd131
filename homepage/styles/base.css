@@ -105,16 +105,18 @@ main a:hover {
     border: 2px solid #e9edc9;
 }
 #paris-pic img{
-    min-width: 200px;
-    max-width: 40%;
+    min-width: 250px;
+    max-width: 80%;
+    margin-top: 160px;
     border: 2px solid #e9edc9; 
+    align-items: center;
 }
 
 .bio {
     grid-column: 1/4;
     margin-left: 20px;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 60px;
     line-height: 30px;
 }
 

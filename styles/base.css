@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond&display=swap');
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
 body {
-    background-color: #ccd5ae;
+    background-color: #f2e9e4;
     font-family: "Cinzel Decorative";
 }
 
 header{
     text-align: center;
     align-content: center;
-    background: #fefae0;
-    color: #d4a373;
+    background: #22223b;
+    color: #f2e9e4;;
     border-radius: 10px;
     padding: 10px;
 }
@@ -18,7 +16,7 @@ header{
 .top-menu {
     font-size: 1.2rem;
     display: flex;
-    background: #e9edc9;
+    background: #f2e9e4;
     border-radius: 10px;
 }
 
@@ -27,12 +25,12 @@ header{
     text-align: center;
     text-decoration: none;
     flex: auto;
-    color: #d4a373;
+    color: #22223b;
 }
 
 .top-menu a:hover {
-    background: #d4a373;
-    color: #ccd5ae;
+    background: #22223b;
+    color: #f2e9e4;
     border-radius: 10px;
 }
 
@@ -58,7 +56,7 @@ main {
 .card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    border: 2px solid #d4a373;
+    border: 2px solid #9a8c98;
     border-radius: 3px;
 }
 
@@ -67,9 +65,9 @@ main {
     text-align: center;
     height: 75px;
     font-size: 25px;
-    background-color: #fefae0;
+    background-color: #9a8c98;
     border-radius: 3px;
-    color: #d4a373;
+    color: #22223b;
 }
 
 .about-header {
@@ -77,9 +75,9 @@ main {
     text-align: center;
     height: 75px;
     font-size: 25px;
-    background-color: #fefae0;
+    background-color: #9a8c98;
     border-radius: 3px;
-    color: #d4a373;
+    color: #22223b;
 }
 
 .travel {
@@ -88,9 +86,9 @@ main {
     text-align: center;
     height: 75px;
     font-size: 25px;
-    background-color: #fefae0;
+    background-color: #9a8c98;
     border-radius: 3px;
-    color: #d4a373;
+    color: #22223b;
 }
 main a {
     text-decoration: none;
@@ -108,23 +106,23 @@ main a:hover {
     min-width: 200px;
     max-width: 100%;
     margin-top: 20px;
-    border: 2px solid #e9edc9;
+    border: 2px solid #4a4e69;
 }
 #paris-pic img{
     min-width: 200px;
     max-width: 80%;
     margin-top: 10px;
-    border: 2px solid #e9edc9; 
+    border: 2px solid #4a4e69; 
 }
 #london-pic img {
     min-width: 200px;
     max-width: 80%;
-    border: 2px solid #e9edc9; 
+    border: 2px solid #4a4e69; 
 }
 #slovenia-pic img {
     min-width: 200px;
     max-width: 80%;
-    border: 2px solid #e9edc9; 
+    border: 2px solid #4a4e69; 
 }
 
 .bio {
@@ -167,8 +165,8 @@ main a:hover {
     grid-row: center;
 }
 .travel-links a{
-    background-color: #e9edc9;
-    color: #d4a373;
+    background-color: #22223b;
+    color: #f2e9e4;
     width: 200px;
     border-radius: .75rem;
     padding: 30px;
@@ -181,6 +179,6 @@ main a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background: #fefae0;
-    color: #d4a373;
+    background: #22223b;
+    color: #f2e9e4;
 }

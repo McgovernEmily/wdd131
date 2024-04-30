@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
 body {
     background-color: #ccd5ae;
@@ -37,6 +38,8 @@ header{
 
 p {
     margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
 }
 
 h2 {
@@ -128,7 +131,7 @@ main a:hover {
     grid-column: 1/4;
     margin-left: 20px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 60px;
     line-height: 30px;
 }
 
@@ -141,7 +144,7 @@ main a:hover {
     grid-column: 2/5;
     margin-right: 20px;
     line-height: 30px;
-    margin-top: -670px;
+    margin-top: -650px;
 }
 
 #paris-pic {

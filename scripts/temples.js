@@ -8,7 +8,7 @@ const lastModified = document.querySelector("#lastModified");
 lastModified.innerHTML = `Last Modified: <span>${modif}</span>`;
 
 // This is my nav bar.
-const hamButton = document.querySelector('#listing');
+const hamButton = document.querySelector('#al');
 const nav = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {

@@ -29,8 +29,10 @@ main {
 .navigation {
     display: flex;
     flex-direction: column;
+    font-family: "EB Garamond", serif;
 }
 h1 {
+    font-family: "Sedan SC", serif;
     align-self: flex-start;
     padding-left: 10px;
     font-size: 33px;
@@ -63,6 +65,7 @@ section{
     grid-template-columns: 1fr;
 }
 h2 {
+    font-family: "Sedan SC", serif;
     text-align: center;
     font-size: 35px;
     margin-top: 35px;
@@ -79,6 +82,7 @@ figure {
 figcaption {
     margin-top: 7px;
     text-align: center;
+    font-family: "Cormorant Garamond", serif;
 }
 
 figure img {
@@ -90,5 +94,5 @@ footer {
     background-color: #dee2ff;
     text-align: center;
     padding: 20px;
-
+    font-family: "Sedan SC", serif;
 }

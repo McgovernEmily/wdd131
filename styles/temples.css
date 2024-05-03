@@ -47,7 +47,7 @@ h1 {
 }
 .navigation a:hover {
     background-color: #feeafa;
-    columns: black;
+    color: black;
 }
 .open a {
     display: block;

@@ -3,19 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+}
 
-header  {
+main {
+    margin: auto;
+    max-width: 1200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
     background-color: lightblue;
-    text-align: center;
-    align-content: center;
-    padding: 2px;
-    display: grid;
-    padding: 20px;
-    border: 1px solid lightblue
 }
 
 h1 {
-    font-size: 2rem;
+    text-align: left;
+}
+#hamburger-x::after {
+	content: "☰";
+    font-size: 3rem;
 }
 
 nav {
@@ -24,17 +36,53 @@ nav {
 }
 
 nav a {
-    font-size: 1.2rem;
     display: block;
     text-align: center;
-    padding: 1rem;
-    padding-right: 3.2rem;
     text-decoration: none;
-    
+    transition: 0.8s;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: auto;
 }
 
 nav a:hover {
     color: blue;
 }
+.open #top-nav {
+    display: block;
+}
 
+#hamburger-x.open::before {
+    content: "X";
+}
 
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+figure {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    margin-top: 7px;
+    text-align: center;
+}
+
+figure img {
+    max-width: 80%;
+    height: 80%;
+}
+
+footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+
+}

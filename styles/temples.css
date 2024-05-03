@@ -6,7 +6,7 @@
 body{
     margin: 0;
 }
-#hamburger-x {
+#listing {
     font-size: 16px;
     background: none;
     border: none;
@@ -15,11 +15,11 @@ body{
     top: 10px;
     right: 18px;
 }
-#hamburger-x::before {
+#listing::before {
 	content: "☰";
     font-size: 45px;
 }
-#hamburger-x.open::before {
+#listing.open::before {
     content: "X";
 }
 main {

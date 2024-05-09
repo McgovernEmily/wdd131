@@ -1,5 +1,5 @@
 :root {
-    --header-color: rgb(174, 35, 35);
+    --header-color: rgb(116, 16, 16);
     --background-color-transparent: rgba(255, 245, 207, 0.7);
 }
 
@@ -17,7 +17,7 @@ header  {
     text-align: center;
     background-color: var(--header-color);
     padding: 10px;
-    color: #f1f7ed;
+    color: white;
     font-family: 'Poetsen One', sans-serif;
     letter-spacing: 2px;
     font-weight: 100;
@@ -86,7 +86,7 @@ footer  {
     text-align: center;
     padding: 20px;
     background-color: var(--header-color);
-    color: #f1f7ed;
+    color: white;
     font-family: "Kanit", sans-serif;
     font-weight: 100;
 }

@@ -6,8 +6,91 @@
     <title>W03 Place: Italy</title>
     <meta name="description" content="W03 Assignment: Italy Page">
     <meta name="author" content="Emily McGovern">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1>Italy</h1>
+    </header>
+    <main>
+        <div class="italy-pic">
+            <picture>
+                <source srcset="images/italy.webp" media="(min-width: 1000px)">
+                <img src="images/italy.webp" alt="Italian landscape">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <div class="data-row">
+                <div class="left-col">Area:</div>
+                <div class="right-col">116,631 square miles</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Population:</div>
+                <div class="right-col">58.94 million</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Capital:</div>
+                <div class="right-col">Rome</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Languages:</div>
+                <div class="right-col">Italian</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Currency:</div>
+                <div class="right-col">Euro</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Time Zone:</div>
+                <div class="right-col">Central European Time</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Calling Code:</div>
+                <div class="right-col">+39</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Internet TLD:</div>
+                <div class="right-col">it</div>
+            </div>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <div id="weather-img">
+                <img src="images/clouds-sun.svg" alt="weather sunny icon" width="150">
+            </div>
+            <div class="weather-data"></div>
+                <div class="data-row">
+                    <div class="left-col">Temperature:</div>
+                    <div class="right-col">
+                        <div class="temp">23°C</div>
+                    </div>
+                </div>
+                <div class="data-row">
+                    <div class="left-col">Conditions:</div>
+                    <div class="right-col">Partly Cloudy</div>
+                </div>
+                <div class="data-row">
+                    <div class="left-col">Wind:</div>
+                    <div class="right-col">
+                        <div class="wind">5km/h</div>
+                    </div>
+                </div>
+                <div class="data-row">
+                    <div class="left-col">Wind Chill:</div>
+                    <div class="right-col">
+                        <div class="windchill"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&COPY;<span id="currentyear"></span> | Emily McGovern | Italy</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

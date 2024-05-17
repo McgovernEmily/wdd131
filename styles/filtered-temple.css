@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+#al {
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 18px;
+}
+#al::before {
+	content: "☰";
+    font-size: 45px;
+}
+#listing.open::before {
+    content: "X";
+}
+main {
+    margin: auto;
+    max-width: 1200px;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    font-family: "EB Garamond", serif;
+}
+h1 {
+    font-family: "Sedan SC", serif;
+    align-self: flex-start;
+    padding-left: 10px;
+    font-size: 33px;
+}
+.navigation a {
+    display: none;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navigation a:hover {
+    background-color: #feeafa;
+    color: black;
+}
+.open a {
+    display: block;
+}
+header {
+    background-color: #dee2ff;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    border: 1px solid #efd3d7;
+    box-shadow: 0 0 15px #cbc0d3;
+}
+section{ 
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h2 {
+    font-family: "Sedan SC", serif;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+figure {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    margin-top: 7px;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+}
+
+figure img {
+    max-width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: #dee2ff;
+    text-align: center;
+    padding: 20px;
+    font-family: "Sedan SC", serif;
+}

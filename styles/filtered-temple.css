@@ -60,7 +60,7 @@ header {
     border: 1px solid #efd3d7;
     box-shadow: 0 0 15px #cbc0d3;
 }
-section{ 
+div{ 
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -72,20 +72,20 @@ h2 {
     margin-bottom: 5px;
 }
 
-figure {
+section {
     margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-figcaption {
+h3 {
     margin-top: 7px;
     text-align: center;
     font-family: "Cormorant Garamond", serif;
 }
 
-figure img {
+img {
     max-width: 100%;
     height: 100%;
 }

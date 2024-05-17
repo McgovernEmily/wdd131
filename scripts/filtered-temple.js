@@ -95,72 +95,61 @@ const temples = [
         area: 25000,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/copenhagen-denmark/400x250/copenhagen-denmark-temple-lds-278232-wallpaper.jpg"
     }
-  ];
+];
 
-document.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.temple-container');
-    const homeLink = document.getElementsByClassName('.home');
-    const oldLink = document.getElementsByClassName('.old');
-    const newLink = document.getElementsByClassName('.new');
-    const largeLink = document.getElementsByClassName('.large');
-    const smallLink = document.getElementsByClassName('.small');
+createTempleCard(temples);
+
+const oldTemples = document.querySelector("#old");
+const newTemples = document.querySelector("#new");
+const largerTemples = document.querySelector("#large");
+const smallTemples = document.querySelector("#small");
 
 
-    const displayTemples = (filteredTemples) => {
-        container.innerHTML = ''; // Clear existing content
-        filteredTemples.forEach(temple => {
-            const figure = document.createElement('figure');
-            figure.classList.add('hover');
-
-            const img = document.createElement('img');
-            img.src = temple.imageUrl;
-            img.alt = temple.templeName;
-            img.loading = "lazy";
-            figure.appendChild(img);
-
-            const figcaption = document.createElement('figcaption');
-            figcaption.innerHTML = `
-                <h3>${temple.templeName}</h3>
-                <p>Location: ${temple.location}</p>
-                <p>Dedicated: ${formatDate(temple.dedicated)}</p>
-                <p>Area: ${temple.area.toLocaleString()} sq ft</p>
-            `;
-            figure.appendChild(figcaption);
-
-            container.appendChild(figure);
-        });
-    };
-
-    const formatDate = (dateString) => {
-        const date = new Date(dateString);
-        const year = date.getFullYear();
-        const month = date.toLocaleString('default', { month: 'long' });
-        const day = date.getDate();
-        return `${year}, ${month}, ${day}`;
-    };
-
-    homeLink.addEventListener('click', () => displayTemples(temples));
-
-    oldLink.addEventListener('click', () => {
-        const oldTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
-        displayTemples(oldTemples);
-    });
-
-    newLink.addEventListener('click', () => {
-        const newTemples = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
-        displayTemples(newTemples);
-    });
-
-    largeLink.addEventListener('click', () => {
-        const largeTemples = temples.filter(temple => temple.area > 90000);
-        displayTemples(largeTemples);
-    });
-
-    smallLink.addEventListener('click', () => {
-        const smallTemples = temples.filter(temple => temple.area < 10000);
-        displayTemples(smallTemples);
-    });
-
-    // Display all temples by default when the page loads
-    displayTemples(temples);
+oldTemples.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(',') [0]) < 1900));
 });
+
+newTemples.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(',') [0]) > 2000));
+});
+
+largerTemples.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 90000));
+});
+
+smallTemples.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+});
+
+const homeBut = document.querySelector("#home");
+homeBut.addEventListener("click", () => {
+    createTempleCard(temples);
+})
+
+function createTempleCard(filteredTemples) {
+    document.querySelector(".temple-grid").innerHTML = "";
+    filteredTemples.forEach(temple => {
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedication = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
+
+        name.textContent = temple.templeName;
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+        img.setAttribute("src", temple.imageUrl);
+        img.setAttribute("alt", `${temple.templeName} Temple`);
+        img.setAttribute("loading", "lazy");
+
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedication);
+        card.appendChild(area);
+        card.appendChild(img);
+
+        document.querySelector(".temple-grid").appendChild(card);
+    });
+}

@@ -77,6 +77,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 2px 12px 12px gray;
+    background-color: #feeafa;
 }
 
 h3 {
@@ -93,6 +95,8 @@ img {
 footer {
     background-color: #dee2ff;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     font-family: "Sedan SC", serif;
+    width: 100%;
+    margin-bottom: -50px;
 }

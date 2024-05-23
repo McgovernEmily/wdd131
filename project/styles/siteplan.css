@@ -1,25 +1,18 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond&display=swap');
 
 :root {
-  /* change the values below to your colors from your palette */
   --primary-color: #941B13;
   --secondary-color: #E09C95;
   --accent1-color: #DCD1CB;
   --accent2-color: #622648;
 
-  /* change the values below to your chosen font(s) */
-  --heading-font: "Cinzel Decorative", cursive;
-  --paragraph-font: "Cormorant Garamond", serif;
+  --heading-font: "Sendan", serif;
+  --paragraph-font: "Figtree", serif;
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #622648;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #941B13; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+
+  --headline-color-on-white: #622648; 
+  --headline-color-on-color: white; 
+  --paragraph-color-on-white: #941B13;  
+  --paragraph-color-on-color: white;  
   --paragraph-background-color: #941B13;
   --nav-link-color: black;
   --nav-background-color: #E09C95;
@@ -27,14 +20,11 @@ Fonts are separated by a | */
   --nav-hover-background-color: #941B13;
 }
 
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
 body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 22px;
+  max-width: 1800px;
+  margin: 0;
+  padding: 2px;
+  font-size: 20px;
   text-align: center;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -69,6 +59,12 @@ p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
   padding: 1em;
+}
+.paragraph-font {
+  font-family: var(--paragraph-font);
+}
+.heading-font {
+  font-family: var(--heading-font);
 }
 .colors {
   width: 100%;
@@ -114,7 +110,7 @@ nav  {
 
 }
 nav a {
-  padding:1em;
+  padding: 1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
@@ -184,4 +180,9 @@ td {
 }
 .secondary {
   color: black;
+}
+footer {
+  text-align: center;
+  background: var(--primary-color);
+  color: white;
 }

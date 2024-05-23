@@ -8,6 +8,15 @@
         <meta name="description" content="W05 Assignment: Website Plan">
         <meta name="author" content="Emily McGovern">
         <link rel="stylesheet" href="styles/siteplan.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit&family=Open+Sans:wght@300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Roboto:wght@500&family=Sedan+SC&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond&family=Figtree&family=Kanit&family=Open+Sans:wght@300&family=Playfair+Display&family=Poetsen+One&family=Roboto:wght@500&family=Sedan+SC&display=swap"
+            rel="stylesheet">
+
     </head>
 
     <body>
@@ -15,34 +24,29 @@
             <h1>France Site Plan</h1>
             <h2>Emily McGovern</h2>
             <h2>WDD 131</h2>
-
         </header>
         <main>
             <hr>
             <h2>Overview</h2>
-
             <h3>Site Name</h3>
-            <p>Frenchy Travel Suggestions</p>
-
-            <h3>Domain Name</h3>
+            <p>Frenchy Travel Suggestions</p>            <h3>Domain Name</h3>
             <p>traveling-french-cities.org</p>
-
             <h3>Purpose</h3>
             <p>Have you ever wanted to travel to a beautiful country full of wonder and culture, but need help knowing
                 where to book everything or where to start? This beautiful French traveling website will display cozy
                 hotels, delicious restaurants, and fun-filled activities. It will be an easy way for travelers to get
                 ideas of what to do while they travel around France. </p>
-
             <h3>Audience</h3>
             <ul>
-                <li>Travelers: People wanting to plan a visit to France with the idea of leisure and wanting to learn about
-                the culture. They might be looking for information about activities, restaurants, and hotels.</li>
+                <li>Travelers: People wanting to plan a visit to France with the idea of leisure and wanting to learn
+                    about
+                    the culture. They might be looking for information about activities, restaurants, and hotels.</li>
                 <li>Travelers: People who are traveling to France or studying there and want to learn more about
-                what the country has to offer.</li>
-                <li>Family/couples: whether it be families or couples living in France or traveling to France, these hotels,
-                restaurants, and activities will be available for all.</li>
+                    what the country has to offer.</li>
+                <li>Family/couples: whether it be families or couples living in France or traveling to France, these
+                    hotels,
+                    restaurants, and activities will be available for all.</li>
             </ul>
-
             <h2>Scenarios</h2>
             <ul>
                 <li>“What are the top 3 must-visit attractions in Paris and what are their opening hours?”</li>
@@ -51,21 +55,15 @@
                 <li>“I am studying abroad in Italy and want to travel to Colmar. What are some cheap hotels?”</li>
                 <li>“What are some activities that are fun for both adults and children?”</li>
             </ul>
-
             <hr>
-
             <h2>
                 Style Guide
             </h2>
-
             <h3>
                 Color Palette
             </h3>
-
             Palette URL: <a href="https://coolors.co/941b13-db795e-dcd1cb-622648"
                 target="_blank">https://coolors.co/941b13-db795e-dcd1cb-622648</a>
-
-
             <table class="colors">
                 <tr>
                     <th>Primary</th>
@@ -73,7 +71,6 @@
                     <th>Accent 1</th>
                     <th>Accent 2</th>
                 </tr>
-
                 <tr>
                     <td class="primary">[#941B13]</td>
                     <td class="secondary">[#DB795E]</td>
@@ -81,18 +78,15 @@
                     <td class="accent2">[#622648]</td>
                 </tr>
             </table>
-
-            <h3>
+            <hr>
+            <h2>
                 Typography
-            </h3>
-
-            <h4>
+            </h2>
+            <h4 class="heading-font">
                 Heading Font: [Sedan SC]
-
             </h4>
-            <h4>
+            <h4 class="paragraph-font">
                 Paragraph Font: [Figtree]
-
             </h4>
             <h3>
                 Normal paragraph example
@@ -116,11 +110,10 @@
                 ex
                 ea commodo consequat.
             </p>
-
+            <hr>
             <h3>
                 Navigation
             </h3>
-
             <nav>
                 <a href="#">HomePage</a>
                 <a href="#">Paris</a>
@@ -136,14 +129,10 @@
                 </div>
                 <div class="sm-page2">
                     Paris
-
                 </div>
                 <div class="sm-page3">
-                    colmar
-
+                    Colmar
                 </div>
-                
-
                 <div class="top">
                     &nbsp;
                 </div>
@@ -153,17 +142,28 @@
                 <div class="right">
                     &nbsp;
                 </div>
-
             </div>
-
+            <hr>
             <h2>
                 Homepage Wireframe
             </h2>
+            <h3>Desktop View</h3>
             <figure>
-                <img src="images/siteplan-wireframe.png" alt="wireframe">
+                <img src="images/siteplan-wireframe.png" alt="Desktop wireframe">
             </figure>
-            
+            <hr>
+            <h3>Mobile View</h3>
+            <figure>
+                <img src="images/mobile-screen-shot-sitplan-france.png" alt="mobile wireframe">
+            </figure>
         </main>
+
+        <footer>
+            <p>&COPY;<span id="currentyear"></span> | Emily McGovern | Italy</p>
+            <p id="lastModified"></p>
+            <script src="scripts/getdates.js" defer></script>
+        </footer>
+        
     </body>
 
 </html>

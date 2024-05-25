@@ -30,7 +30,7 @@ label {
 	display: block;
 	font-weight: bold;
 	margin-top: 18px;
-	columns: black	;
+	color: black	;
 }
 
 input[type="text"], input[type="date"], select, textarea {

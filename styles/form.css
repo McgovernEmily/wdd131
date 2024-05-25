@@ -1,0 +1,132 @@
+
+body {
+	font-family: "Cormorant Garamond", serif;
+	margin: 0;
+	padding: 0;
+	background-color: #8d99ae;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form-group {
+	background-color: #edf2f4;
+	padding: 28px;
+	border-radius: 15px;
+	max-width: 400px;
+	border: 1.5px solid #2b2d42;
+	margin-top: 15px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.75rem;
+	color: navy;
+	border-bottom: 1px solid #bbb;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin-top: 18px;
+	columns: black	;
+}
+
+input[type="text"], input[type="date"], select, textarea {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	display: block;
+}
+
+textarea {
+	resize: vertical;
+	height: 50px;
+	width: 200px;
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: navy;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #556278;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+fieldset {
+	padding: 0;
+}
+
+legend {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.checkbox input[type="checkbox"] {
+	margin-right: 10px;
+	margin-top: 8px;
+}
+
+.checkbox label {
+	padding-bottom: 15px;
+}
+
+input[type="submit"]{
+	width: 100%;
+	background-color: #2b2d42;
+	color: white;
+	height: 50px;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+input[type="submit"]:hover{
+	background-color: #8d99ae;
+	color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background: #2b2d42;
+    color: #f2e9e4;
+	width: 100%;
+	margin-top: 20px;
+}

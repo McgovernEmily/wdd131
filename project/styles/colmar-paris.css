@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #941B13;
+    --secondary-color: #E09C95;
+    --accent1-color: #DCD1CB;
+    --accent2-color: #622648;
+  
+    --heading-font: "Sendan", serif;
+    --paragraph-font: "Figtree", serif;
+  
+  
+    --headline-color-on-white: #622648; 
+    --headline-color-on-color: white; 
+    --paragraph-color-on-white: #941B13;  
+    --paragraph-color-on-color: white;  
+    --paragraph-background-color: #941B13;
+    --nav-link-color: black;
+    --nav-background-color: #E09C95;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #941B13;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-size: 20px;
+}
+
+h1, h2{
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+    text-align: center;
+}
+
+header {
+    padding: 1.5em;
+    text-align: center;
+    background-color: var(--accent2-color);
+}
+
+nav {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav a {
+    padding: 1.5em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 2em;
+    padding-left: 2em;
+    font-size: 28px;
+    border-radius: 10px;
+}
+
+nav a:link, nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+#hotel-list a {
+    color: black;
+    text-decoration: none;
+}
+
+#hotel-list a:hover {
+    color: yellow;
+}
+
+footer {
+    width: 100%;
+    display: grid;
+    background: var(--primary-color);
+    color: white;
+}
+footer p{
+    text-align: center;
+    grid-row: 1;
+
+}
+footer .social {
+    grid-row: 1;
+    text-align: center;
+    margin-top: 5px;
+}
+.social a {
+    text-decoration: none;
+    grid-row: 1;
+}

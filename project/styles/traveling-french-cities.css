@@ -1,0 +1,225 @@
+:root {
+    --primary-color: #941B13;
+    --secondary-color: #E09C95;
+    --accent1-color: #DCD1CB;
+    --accent2-color: #622648;
+  
+    --heading-font: "Sendan", serif;
+    --paragraph-font: "Figtree", serif;
+  
+  
+    --headline-color-on-white: #622648; 
+    --headline-color-on-color: white; 
+    --paragraph-color-on-white: #941B13;  
+    --paragraph-color-on-color: white;  
+    --paragraph-background-color: #941B13;
+    --nav-link-color: black;
+    --nav-background-color: #E09C95;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #941B13;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-size: 20px;
+}
+
+h1, h2{
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+    text-align: center;
+}
+
+header {
+    padding: 1.5em;
+    text-align: center;
+    background-color: var(--accent2-color);
+}
+
+nav {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav a {
+    padding: 1.5em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 2em;
+    padding-left: 2em;
+    font-size: 28px;
+    border-radius: 10px;
+}
+
+nav a:link, nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.slideshow-container h1 {
+  color: var(--accent1-color);
+  position: absolute;
+  margin-top: 2em;
+  z-index: 1;
+  font-size: 100px;
+  background-color: rgba(0, 0, 0, 0.651);
+  width: 100%;
+  padding: 15px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 100px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: .5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#french-culture p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-color);
+    text-align: center;
+    padding-top: 150px;
+}
+
+h2 {
+  background-color: var(--accent2-color);
+  color: var(--headline-color-on-color);
+  padding: 10px;
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+#french-culture, #french-beauty {
+  background-color: var(--paragraph-background-color);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+}
+
+#french-culture-pic  img{
+  align-items: left;
+  width: 800px;
+  height: inherit;
+  border: 10px solid var(--accent1-color);
+  border-radius: 5px;
+}
+
+#french-beauty p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-color);
+  text-align: center;
+  padding-top: 200px;
+}
+
+#french-beauty-pic img {
+  align-items: left;
+  width: 800px;
+  height: inherit;
+  border: 10px solid var(--accent1-color);
+  border-radius: 5px;
+}
+
+#french-beauty {
+  margin-bottom: 50px;
+}
+
+footer {
+    width: 100%;
+    display: grid;
+    background: var(--primary-color);
+    color: white;
+}
+footer p{
+    text-align: center;
+    grid-row: 1;
+
+}
+footer .social {
+    grid-row: 1;
+    text-align: center;
+    margin-top: 5px;
+}
+.social a {
+    text-decoration: none;
+    grid-row: 1;
+}

@@ -39,9 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
         productName.appendChild(option);
     });
 
-    const formDoc = document.getElementById('form-group');
-    formDoc.addEventListener('submit', function (event) {
-        let reviewCount = localStorage.getItem('reviewCount') || 0;
-        localStorage.setItem('reviewCount', ++reviewCount);
-    });
 });
+
+function amountReview() {
+    const numReviews = document.querySelector(".reviewCounter");
+    let reviewCounter = localStorage.getItem('.reviewCounter') || 0;
+    reviewCounter++;
+    localStorage.getItem('reviewCounter', reviewCounter);
+    numReviews.textContent = reviewCounter;
+};

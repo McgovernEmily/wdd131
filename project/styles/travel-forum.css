@@ -1,0 +1,205 @@
+:root {
+    --primary-color: #941B13;
+    --secondary-color: #E09C95;
+    --accent1-color: #DCD1CB;
+    --accent2-color: #622648;
+  
+    --heading-font: "Sendan", serif;
+    --paragraph-font: "Figtree", serif;
+  
+  
+    --headline-color-on-white: #622648; 
+    --headline-color-on-color: white; 
+    --paragraph-color-on-white: #941B13;  
+    --paragraph-color-on-color: white;  
+    --paragraph-background-color: #941B13;
+    --nav-link-color: black;
+    --nav-background-color: #E09C95;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #941B13;
+}
+header {
+    padding: 1.5em;
+    text-align: center;
+    background-color: var(--accent2-color);
+}
+
+nav {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav a {
+    padding: 1.5em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 2em;
+    padding-left: 2em;
+    font-size: 28px;
+    border-radius: 10px;
+}
+
+nav a:link, nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-size: 20px;
+}
+main {
+    font-family: var(--paragraph-font);
+	margin: 0;
+	padding: 0;
+	background-color: var(--paragraph-color-on-color);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+    padding-bottom: 15px;
+}
+
+.form-group {
+	background-color: var(--accent2-color);
+	padding: 28px;
+	border-radius: 15px;
+	max-width: 400px;
+	border: 3px solid var(--accent1-color);
+	margin-top: 15px;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.75rem;
+	color: var(--headline-color-on-color);
+	border-bottom: 1px solid #bbb;
+}
+
+#thank-you {
+    color: var(--accent2-color);
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin-top: 18px;
+	color: var(--headline-color-on-color);
+}
+
+input[type="text"], input[type="date"], select, textarea {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	display: block;
+}
+
+textarea {
+	resize: vertical;
+	height: 50px;
+	width: 200px;
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(255, 255, 255, 0.147);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: var(--secondary-color);
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #556278;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+fieldset {
+	padding: 0;
+}
+
+legend {
+	margin-bottom: 5px;
+	font-weight: bold;
+    color: var(--headline-color-on-color);
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.checkbox input[type="checkbox"] {
+	margin-right: 10px;
+	margin-top: 8px;
+}
+
+.checkbox label {
+	padding-bottom: 15px;
+}
+
+input[type="submit"]{
+	width: 100%;
+	background-color: var(--primary-color);
+	color: var(--headline-color-on-color);
+	height: 50px;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+input[type="submit"]:hover{
+	background-color: var(--accent1-color);
+	color: black;
+}
+
+footer {
+    width: 100%;
+    display: grid;
+    background: var(--primary-color);
+    color: white;
+}
+footer p{
+    text-align: center;
+    grid-row: 1;
+
+}
+footer .social {
+    grid-row: 1;
+    text-align: center;
+    margin-top: 5px;
+}
+.social a {
+    text-decoration: none;
+    grid-row: 1;
+}

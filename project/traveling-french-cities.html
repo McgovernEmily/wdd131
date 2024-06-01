@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>French Travel Website: Homepage</title>
+        <meta name="description" content="W06 Assignment: French Website Final">
+        <meta name="author" content="Emily McGovern">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit&family=Open+Sans:wght@300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Roboto:wght@500&family=Sedan+SC&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond&family=Figtree&family=Kanit&family=Open+Sans:wght@300&family=Playfair+Display&family=Poetsen+One&family=Roboto:wght@500&family=Sedan+SC&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles/traveling-french-cities.css">
+        <script src="scripts/traveling-french-cities.js" defer></script>
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <a href="traveling-french-cities.html" id="home-page">Home</a>
+                <a href="travel-paris.html">Paris</a>
+                <a href="travel-colmar.html">Colmar</a>
+                <a href="travel-forum.html">Forum</a>
+            </nav>
+        </header>
+        <div class="slideshow-container">
+            <h1>Bonjour France!</h1>
+            <!--images with number and caption text-->
+            <div class="mySlides fade">
+                <img src="images/arc-de-triomphe-header.webp" style="width:100%" loading="lazy">
+                <div class="text">Arc De Triomphe</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/eiffle-tower-header.webp" style="width:100%" loading="lazy">
+                <div class="text">Eiffel Tower</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/notre-dame-header.webp" style="width:100%" loading="lazy">
+                <div class="text">Notre Dame</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <main>
+            <h2>French Culture</h2>
+            <div id="french-culture">
+                <div id="french-culture-pic">
+                    <img src="images/france-flag.webp" alt="French Flag" loading="lazy">
+
+                </div>
+                <p>Bonjour! French culture is full of excitement and beauty. French culture is most commonly
+                    associated with Paris, which is a center of fashion, cuisine, art, and architecture, but life
+                    outside of the City of Lights is a very different and can vary by region. Overall the French culture
+                    includes art and architecture, cuisine and wine, fashion, language and literature, music and dance,
+                    sports, history, and heritage.
+                </p>
+            </div>
+            <h2>French Beauty</h2>
+            <div id="french-beauty">
+                <div id="french-beauty-pic">
+                    <img src="images/mont-saint-michel.webp" alt="Saint mic castle" loading="lazy">
+                </div>
+                <p>
+                    France if full of beauty, from stunning cities like Paris to the gorgeous wineries in the French
+                    countryside,
+                    and the Mediterranean beauty of southern France. This country has tons to offer with it's glorious
+                    rolling vineyards,
+                    canyons, majestic villages, and architecture. Some of the most breathtaking places to visit while
+                    traveling along France
+                    include Palace of Versailles, Eiffel Tower, Chateaux of the Loire Valley, and Chateau de Chenonceau.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&COPY;<span id="currentyear"></span> | Emily McGovern | Italy <p id="lastModified"></p>
+            </p>
+            <div class="social">
+                <a href="https://facebook.com" target="blank">
+                    <img src="images/icons8-facebook.svg" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="blank">
+                    <img src="images/icons8-twitterx.svg" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="blank">
+                    <img src="images/icons8-instagram.svg" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

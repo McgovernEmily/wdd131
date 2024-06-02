@@ -1,0 +1,64 @@
+@media (max-width: 1100px) {
+    #french-beauty p, #french-culture p {
+        padding-top: 10px;
+    }
+
+    #french-culture-pic  img{
+        width: 400px;
+        height: inherit;
+        border: 10px solid var(--accent1-color);
+        border-radius: 5px;
+    }
+    #french-beauty-pic img {
+        width: 400px;
+        height: inherit;
+        border: 10px solid var(--accent1-color);
+        border-radius: 5px;
+      }
+}
+
+@media (max-width: 750px) {
+    
+    nav a {
+        font-size: 20px;
+      }
+      
+      .slideshow-container h1 {
+        color: var(--accent1-color);
+        position: absolute;
+        margin-top: 2em;
+        z-index: 1;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.651);
+        width: 100%;
+        padding: 15px;
+      }
+      
+      /* Caption text */
+      .text {
+        font-size: 25px;
+      }
+      
+      
+      #french-culture p {
+          padding-top: 10px;
+          grid-column: 1;
+      }
+      
+      #french-culture-pic  img{
+          width: 400px;
+          height: inherit;
+          border: 10px solid var(--accent1-color);
+          border-radius: 5px;
+      }
+      #french-beauty p {
+          padding-top: 10px;
+          grid-column: 1;
+      }
+      #french-beauty-pic img {
+          width: 400px;
+          height: inherit;
+          border: 10px solid var(--accent1-color);
+          border-radius: 5px;
+        }
+}

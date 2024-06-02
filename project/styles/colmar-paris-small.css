@@ -1,0 +1,76 @@
+@media (max-width: 1200px) {
+    #sum h1 {
+        font-size: 3em;
+    }
+
+    #sum {
+        margin-top: 35px;
+    }
+
+    #sum p {
+        font-size: 1em;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    ul {
+        margin-top: 0;
+    }
+
+    #hotel-pic  img{
+        width: 400px;
+        height: inherit;
+        border: 10px solid var(--accent1-color);
+        border-radius: 5px;
+    }
+    #restaurant-pic img {
+        width: 400px;
+        height: inherit;
+        border: 10px solid var(--accent1-color);
+        border-radius: 5px;
+    }
+    #activity-pic  img{
+        width: 400px;
+        height: inherit;
+        border: 10px solid var(--accent1-color);
+        border-radius: 5px;
+    }
+      
+}
+
+@media (max-width: 750px) {
+    
+    #sum {
+        margin-top: 10px;
+    }
+
+    #sum p {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    nav a {
+        font-size: 20px;
+      }
+      
+      .slideshow-container h1 {
+        font-size: 25px;
+      }
+      
+      /* Caption text */
+      .text {
+        font-size: 25px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    ul {
+        margin-top: 0;
+        grid-column: 1;
+    }
+    
+}

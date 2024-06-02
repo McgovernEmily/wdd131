@@ -20,47 +20,47 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    font-size: 20px;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-size: 20px;
 }
 
 h1, h2{
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
-    text-align: center;
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  text-align: center;
 }
 
 header {
-    padding: 1.5em;
-    text-align: center;
-    background-color: var(--accent2-color);
+  padding: 1.5em;
+  text-align: center;
+  background-color: var(--accent2-color);
 }
 
 nav {
-    list-style-type: none;
-    text-align: center;
+  list-style-type: none;
+  text-align: center;
 }
 
 nav a {
-    padding: 1.5em;
-    min-width: 120px;
-    text-decoration: none;
-    padding: 10px;
-    padding-right: 2em;
-    padding-left: 2em;
-    font-size: 28px;
-    border-radius: 10px;
+  padding: 1.5em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+  padding-right: 2em;
+  padding-left: 2em;
+  font-size: 28px;
+  border-radius: 10px;
 }
 
 nav a:link, nav a:visited {
-    color: white;
+  color: white;
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 
 .slideshow-container h1 {

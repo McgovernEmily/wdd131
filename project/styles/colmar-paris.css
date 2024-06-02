@@ -22,7 +22,7 @@
 body {
     margin: 0;
     padding: 0;
-    max-width: 100%;
+    width: 100;
     font-size: 20px;
 }
 
@@ -63,13 +63,77 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-#hotel-list a {
-    color: black;
-    text-decoration: none;
+#sum {
+    color: var(--accent1-color);
+    position: absolute;
+    margin-top: 7em;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 100%;
 }
 
-#hotel-list a:hover {
-    color: yellow;
+#sum h1 {
+    font-size: 100px;
+    color: var(--accent1-color);
+}
+
+#sum p {
+    font-size: 35px;
+    margin-right: 5em;
+    margin-left: 5em;
+    text-align: center;
+}
+
+#top-pic img{
+    width: 100%;
+}
+
+h2 {
+    background-color: var(--accent2-color);
+    color: var(--headline-color-on-color);
+    padding: 10px;
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+#hotels, #restaurants, #activities {
+    background-color: var(--paragraph-background-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+}
+
+#hotel-pic img, #activities img {
+    align-items: left;
+    width: 800px;
+    height: inherit;
+    border: 10px solid var(--accent1-color);
+    border-radius: 5px;
+}
+
+#restaurant-pic img {
+    align-items: right;
+    width: 800px;
+    height: inherit;
+    border: 10px solid var(--accent1-color);
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#hotels ul, #restaurants ul, #activities ul {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-color);
+    text-align: center;
+    padding-top: 70px;
+    font-size: 35px;    
+}
+
+a {
+    color: #E09C95;
+}
+
+#activities {
+    margin-bottom: 50px;
 }
 
 footer {

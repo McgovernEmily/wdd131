@@ -104,7 +104,6 @@ h2 {
 }
 
 #hotel-pic img, #activities img {
-    align-items: left;
     width: 800px;
     height: inherit;
     border: 10px solid var(--accent1-color);
@@ -112,7 +111,6 @@ h2 {
 }
 
 #restaurant-pic img {
-    align-items: right;
     width: 800px;
     height: inherit;
     border: 10px solid var(--accent1-color);

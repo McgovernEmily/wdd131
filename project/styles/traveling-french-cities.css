@@ -177,7 +177,6 @@ h2 {
 }
 
 #french-culture-pic  img{
-  align-items: left;
   width: 800px;
   height: inherit;
   border: 10px solid var(--accent1-color);
@@ -192,7 +191,6 @@ h2 {
 }
 
 #french-beauty-pic img {
-  align-items: left;
   width: 800px;
   height: inherit;
   border: 10px solid var(--accent1-color);
